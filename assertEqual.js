@@ -1,5 +1,7 @@
+// A PROPOS: console.assert() is a method that will print ASSERTION FAILED is the assertion is FALSE. If it's TRUE, nothing will happen. 
+
 //Using Template Literals aka Template Strings, improve Implement assertEqual
-const assertEqual = function(actual, expected) {
+const assertEqual = function (actual, expected) {
   if (actual === expected) {
     console.log(`🟢🟢🟢 Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -8,13 +10,8 @@ const assertEqual = function(actual, expected) {
 };
 
 // TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-
-
-
-
-
+assertEqual("Lighthouse Labs", "Bootcamp"); //this will pring ASSERTION FAILED
+assertEqual(1, 1); // this will print nothing
 
 
 /* IMPLEMENT assertEqual
@@ -45,19 +42,6 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-
-
-
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-*/
-
-
-
-
-
-
 
 /*
 ****** En premier: *******
@@ -92,36 +76,26 @@ const assertEqual = function(actual, expected) {
 };
 
 
-
-#2
-// ASSERT EQUAL FUNCTION
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-
-#3
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅  Assertion passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑  Assertion failed: ${actual} !== ${expected}`);
-  }
-};
-
-module.exports = assertEqual;
-
 */
 
+/* REFAIT */
 
 
+/* FUNCTION IMPLEMENTATION
+const assertEqual = function (actual, expected) {
+  if (actual === expected) {
+    console.log(`Assertion Passed: ${actual} === ${expected}`)
+  }
+  else {
+  console.log(`Assertion Failed: ${actual} !=== ${expected}`)
+  }
+}
 
+// TEST CODE
+assertEqual("Lighthouse Labs", "Bootcamp");
+assertEqual(1, 1);
 
-
+*/
 
 
 
