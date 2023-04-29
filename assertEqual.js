@@ -91,8 +91,6 @@ const assertEqual = function(actual, expected) {
     }
 };
 
-//this is used for other files, do not delete
-module.exports = assertEqual;
 
 
 #2
@@ -105,7 +103,6 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-module.exports = assertEqual;
 
 #3
 const assertEqual = function(actual, expected) {
