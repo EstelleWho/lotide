@@ -10,9 +10,9 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp"); //this will pring ASSERTION FAILED
-assertEqual(1, 1); // this will print nothing
+// // TEST CODE
+// assertEqual("Lighthouse Labs", "Bootcamp"); //this will pring ASSERTION FAILED
+// assertEqual(1, 1); // this will print nothing
 
 
 /*
@@ -63,3 +63,5 @@ assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 
 */
+
+module.exports = assertEqual;
