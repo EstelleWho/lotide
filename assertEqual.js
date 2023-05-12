@@ -6,6 +6,9 @@ const assertEqual = function (actual, expected) {
   }
 };
 
+module.exports = assertEqual;
+
+
 // A PROPOS: console.assert() is a method that will print ASSERTION FAILED if the assertion is FALSE. If it's TRUE, nothing will happen. 
 
 // A PROPOS: ES6 Template Literals/Template Strings: this is used to concatenate(ie add) strings together and make it look fancier, simpler, and faster! Instead of console.log('Hello, ' + name + '!'), you would write console.log(`'Hello, ${name}!`), you `${INTERPOLATE(ie inject)} the variable inside back-ticks`.
@@ -25,7 +28,4 @@ const assertEqual = function(actual, expected) {
         console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
     }
 };
-
 */
-
-module.exports = assertEqual;
