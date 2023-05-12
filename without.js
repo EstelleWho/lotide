@@ -9,7 +9,16 @@ aka: remove "1" from the first array
 
 
 const without = function(source, itemsToRemove) {
-  return source.filter(element => !itemsToRemove.includes(element));
+ // result will be an empty array that will store the elements that aren't in itemstoremove
+  const result = [];
+  // use for...of loop to go over each line of the source array and call the elements 
+ for (let element of source) {
+  //if it doesnt include the element is not there, you use .push to add it to the array
+  if (!itemsToRemove.includes(element)) {
+    result.push(element);
+  }
+ }
+ return results;
 };
 
 
@@ -17,13 +26,6 @@ const without = function(source, itemsToRemove) {
 
 /*
 const eqArrays = require('./eqArrays');
-
-
-
-
-
-
-
 
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected) === true) {
@@ -33,8 +35,6 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 */
-
-
 
 //Test
 without([1, 2, 3], [1]) // => [2, 3]
