@@ -1,12 +1,23 @@
 const tail = require("../tail");
+const assert = require("chai").assert;
+
+describe("#tail", () => {
+  
+  it("returns ['Lighthouse', 'Labs'] for ['Yo Yo', 'Lighthouse', 'Labs']", () => {
+    assert.deepEqual(tail(['Yo Yo', 'Lighthouse', 'Labs']), ['Lighthouse', 'Labs']);
+  });
+});
 
 
-// Test Case: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
 
-console.log(tail(words));
+
+// const assertEqual = require("../assertEqual");
+// // Test Case: Check the original array
+// const words = ["Yo Yo", "Lighthouse", "Labs"];
+// tail(words); // no need to capture the return value since we are not checking it
+// assertEqual(words.length, 3); // original array should still have 3 elements!
+
+// console.log(tail(words));
 
 //A PROPOS: ___.tail([ ]) is a method that returns all elements of an array except the first one [0].
 // meow.tail([1, 2, 3, 4]); output: [2, 3, 4]
